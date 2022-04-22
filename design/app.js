@@ -38,6 +38,8 @@ const calcPercentage = function (percentage) {
             let total =  bill + (amountTotal * numOfPeople);
             totalResult.textContent = `$ ${total}`;
 
+            hidden.style.display = 'none';
+
       }else {
               hidden.style.display = 'block';
               hidden.style.fontSize = 'smaller';
