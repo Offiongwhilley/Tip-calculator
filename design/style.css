@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,wght@1,700&family=Karla:wght@400;700&family=Orelega+One&family=Overpass:wght@300;400;600;700&family=PT+Sans+Narrow:wght@700&family=Public+Sans:wght@300;400;700&family=Red+Hat+Display:ital,wght@0,400;0,595;1,500&family=Rubik:wght@400;500;700&family=Space+Mono:ital@1&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:hsl(185, 41%, 84%);
+    font-family: space mono;
+    }
+
+
+header{
+    text-align: center;
+    margin-top: 2em;
+}
+
+.container{
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 20px;
+}
+
+.left{
+    width: 250px;
+    float: left;
+    position: relative;
+    top: 15%;
+    left: 5%;
+}
+
+.paragraph{
+    margin-bottom: 0.1em;
+}
+
+.bill{
+    background-color: hsl(189, 41%, 97%);
+    background-image: url(/images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    text-align: right;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    width: 255px;
+    border-radius: 5px;
+    border: none;
+}
+
+.bill:hover{
+    border: 1px solid hsl(172, 67%, 45%);
+}
+
+.btns{
+    margin-bottom: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5em;
+}
+
+.btn{
+    width: 80px;
+    height: 25px;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 10%;
+    color: white;
+}
+
+.btn:hover{
+    background-color:hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.custom{
+    background-color: white;
+    color: hsl(183, 100%, 15%);
+    width: 80px;
+    height: 25px;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.custom:hover{
+    background-color: white;
+    border: 1px solid hsl(172, 67%, 45%);
+}
+
+.no-of-people{
+    background-color: hsl(189, 41%, 97%);
+    background-image: url(/images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    text-align: right;
+    padding: 0.5em;
+    width: 255px;
+    border-radius: 5px;
+    border: none;
+}
+
+.no-of-people:hover{
+    border: 1px solid hsl(172, 67%, 45%);
+}
+
+.hidden{
+    margin-left: 1.4em;
+    color: red;
+}
+
+.right{
+    position: relative;
+    float: right;
+    top: 15%;
+    right: 5%;
+    background-color: hsl(183, 100%, 15%);
+    width: 250px;
+    height: 220px;
+    padding: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0;
+    border-radius: 10px;
+    color: white;
+}
+
+.amount{
+    margin-top: -1em;
+    font-size: 0.9rem;    
+}
+
+.amount-result{
+    margin-left: 2em;
+    font-size: 1.2rem;
+}
+
+.total{
+    margin-top: 0.2em;
+    font-size: 0.9rem ;
+}
+
+.total-result{
+    margin-left: 4.2em;
+    font-size: 1.2rem;
+}
+
+.small-p{
+    font-size: small;
+    opacity: 0.7;
+
+}
+
+.reset{
+    width: 200px;
+    height: 30px;
+    margin-top: 4em;
+    margin-left: 1em;
+    border-radius: 5px;
+    background-color: hsl(180, 83%, 25%);
+}
+
+footer{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* media queries */
+
+@media screen and (max-width:600px) {
+
+    header img{
+        height: 30px;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .container{
+        width: 300px;
+        height: 450px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+
+    .left{
+        width: 200px;
+        height: 225px;
+        top: 10%;
+        left: 13%;
+        font-size: 0.8rem;
+        line-height: 1.2;
+    }
+
+    .bill{
+        width: 220px;
+        margin-bottom: 0.5em;
+    }
+
+    .btns{
+        width: 220px;
+    }
+
+    .no-of-people{
+        width: 220px;
+    }
+
+    .right{
+        width: 300px;
+        height: 225px;
+        padding-top: 3em;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        position: relative;
+        right: -1px;
+        top: 5%;
+    }
+
+    .amount{
+        margin-top: -2em;
+        margin-left: 1.5em;
+    }
+    
+    .amount-result{
+        color: hsl(172, 67%, 45%);
+    }
+    
+    .total{
+        margin-top: 0.5em;
+        margin-left: 1.5em;
+    }
+    
+    .total-result{
+        color: hsl(172, 67%, 45%);
+    }
+    
+    .small-p{
+        font-size: 10px;
+    }
+    
+    .reset{
+        width: 200px;
+        height: 30px;
+        margin-top: 4em;
+        border-radius: 5px;
+        margin-left: 2em;
+    }
+    
+    footer{
+        top: 98%;
+        font-size: 8px;
+    }
+
+
+    
+}

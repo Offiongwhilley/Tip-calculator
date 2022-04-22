@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="./design/style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<!-- header -->
+  <header>
+    <img src="./images/logo.svg" alt="">
+  </header>
+
+<!-- main -->
+  <main>
+    <div class="container">
+
+  <!-- left -->
+    <section class="left">
+        <p class="paragraph"> Bill</p>
+        <input type="number" class="bill" placeholder="                                     0" >
+
+        <p class="paragraph">Select Tip % </p>
+      <div class="btns">
+        <button class="btn five">5%</button>
+        <button class="btn ten">10%</button>
+        <button class="btn fifteen">15%</button>
+        <button class="btn twenty-five">25%</button>
+        <button class="btn fifty">50%</button>
+        <input type="number" class="custom" placeholder="Custom">
+      </div>
+        <p class="paragraph"> Number of People <span class="hidden">Can't be zero</span></p>
+        <input type="number" class="no-of-people" placeholder="                                      0">
+
+    </section>
+
+<!-- right -->
+    <section class="right">
+
+      <div class="amount">
+        <p> Tip Amount<span class="amount-result">$ 0.00</span></p>
+        <p class="small-p">/ person</p>
+      </div>
+
+      <div class="total">
+        <p>Total<span class="total-result">$ 0.00</span></p>
+        <p class="small-p">/ person</p>
+      </div>
+
+        <button btn class="btn reset"> RESET</button>
+    </section>
+
+    </div>
+</main>
+
+<!-- footer -->
+<footer>
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Offiong Ekpenyong</a>.
+    </div>
+</footer>
+
+<script src="./design/app.js"></script>
+</body>
+</html>
