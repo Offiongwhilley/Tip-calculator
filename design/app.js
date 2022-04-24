@@ -81,11 +81,10 @@ custom.addEventListener('input', function () {
 
 
 //the reset function
-
 reset.addEventListener('click', function () {
   console.log(`hello`);
-  bill.value = '0';
-  numOfPeople.value = '0';
+  bill.value = 'null';
+  numOfPeople.value = 'null';
   hidden.style.display = 'none';
   amountResult.textContent = '$ 0.00';
   totalResult.textContent = '$ 0.00';
