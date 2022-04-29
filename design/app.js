@@ -12,7 +12,7 @@ const fifty = document.querySelector('.fifty');
 
 const hidden = document.querySelector('.hidden');
 
-const amountResult = document.querySelector('.amount-result');
+const tipResult = document.querySelector('.amount-result');
 const totalResult = document.querySelector('.total-result');
 
 const reset = document.querySelector('.reset');
@@ -32,15 +32,24 @@ const calcPercentage = function (percentage) {
   //setting tip conditions
       if (bill != 0 && numOfPeople != 0) {
 
-            let amountTotal = bill * percentage/100;
-            let tipPerPerson = amountTotal/numOfPeople;
-            amountResult.textContent = `$ ${tipPerPerson}`;
+            // let tip = bill * (percentage/100);
+            // let tipPerPerson = tip/numOfPeople;
+            // amountResult.textContent = `$ ${tipPerPerson}`;
 
-            let total =  bill + (amountTotal * numOfPeople);
-            let totalPerPerson = (bill/numOfPeople) + tipPerPerson;
-            totalResult.textContent = `$ ${totalPerPerson}`;
+            // let total =  (bill + tip) / numOfPeople;
+            // totalResult.textContent = `$ ${totalPerPerson}`;
+
+            // hidden.style.display = 'none';
+
+            let tip = bill * (percentage/100);
+            let tipPerPerson = tip/numOfPeople;
+            tipResult.textContent = (tipPerPerson.toFixed()) + '.00';
+
+            let total = ( bill + tip)/numOfPeople;
+            totalResult.textContent = (total.toFixed()) +`.00`;
 
             hidden.style.display = 'none';
+
 
       }else {
               hidden.style.display = 'block';
