@@ -43,10 +43,10 @@ const calcPercentage = function (percentage) {
 
             let tip = bill * (percentage/100);
             let tipPerPerson = tip/numOfPeople;
-            tipResult.textContent = (tipPerPerson.toFixed()) + '.00';
+            tipResult.textContent = tipPerPerson.toFixed() + '.00';
 
             let total = ( bill + tip)/numOfPeople;
-            totalResult.textContent = (total.toFixed()) +`.00`;
+            totalResult.textContent = total.toFixed() +`.00`;
 
             hidden.style.display = 'none';
 
